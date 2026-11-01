@@ -1,0 +1,445 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Philemon Obed Essuman | Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Philemon Obed Essuman — software engineering and web development portfolio.">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="port.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <div>
+            <a href="#" id="logo"><b>OB</b></a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle">MENU</label>
+
+        <div class="content">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="#support-popup" id="support">Support</a>
+
+        </div>
+
+    </nav>
+
+    <!-- =========================
+         SUPPORT / DONATION POPUP
+    ========================== -->
+
+    <div id="support-popup" class="modal-overlay">
+
+        <div class="modal-content">
+
+            <h2>Thank You for Your Support!</h2>
+
+            <p>
+                Your encouragement also keeps me moving.
+                Consider sharing or making a donation!
+            </p>
+
+            <!-- Donor email and chosen donation amount -->
+            <label for="support-email">Email address</label>
+            <input
+                type="email"
+                id="support-email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+            >
+
+            <br><br>
+
+            <label for="support-amount">Donation amount (GHS)</label>
+            <input
+                type="number"
+                id="support-amount"
+                placeholder="Enter amount, e.g. 20.00"
+                min="0.50"
+                max="10000.00"
+                step="0.01"
+                inputmode="decimal"
+                required
+            >
+
+            <p id="payment-message" role="status" aria-live="polite"></p>
+
+            <br>
+
+            <!-- Payment is initialized securely by the backend -->
+            <button
+                type="button"
+                id="pay-button"
+                class="pay-button">
+                Donate with Paystack
+            </button>
+
+            <a href="#home" class="close-btn">
+                &times; Close
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="text-field">
+
+            <h1>
+                Turning complex backend logic into seamless
+                digital experiences.
+            </h1>
+
+            <p>
+                Hi, I'm Obed, a software engineer specializing
+                in web development.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="explore">
+                    Explore Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#contact" class="resume">
+                    Contact Me
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="img">
+
+            <img loading="lazy" src="photo.jpg" alt="Philemon Obed Essuman">
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+
+    <section class="about" id="about">
+
+        <h2>Something about myself</h2>
+
+        <div class="hero-graphic">
+
+            <div class="shape shape-1"></div>
+
+            <div class="shape shape-2"></div>
+
+            <div class="shape shape-3"></div>
+
+        </div>
+
+        <p>
+            My path to software engineering started with a
+            fascination for how everyday digital tools are
+            built behind the scenes, turning early curiosity
+            into a dedicated career of solving complex
+            problems through clean code. Today, I build
+            scalable applications with a focus on intuitive
+            user experiences and efficient architecture.
+            What drives me is the constant evolution of
+            technology and the satisfaction of transforming
+            abstract ideas into robust, high-performing
+            software that genuinely makes life easier.
+        </p>
+
+        <br><br>
+
+        <p id="motivation">
+            I believe great design is invisible and
+            accessibility should never be an afterthought.
+        </p>
+
+        <p>
+            I am a human who use honey as a hero against
+            sugar, the antagonist in my diet. I am
+            perpetually powered by adventist music.
+            You'll find me browsing for more tips to make
+            my PC look more professional and easy to use.
+        </p>
+
+        <br>
+
+        <h2>My Skills</h2>
+
+        <div class="skill-box">
+
+            <div class="skill">
+                <a>
+                    <i class="fa-solid fa-check"></i>
+                </a>
+                HTML
+            </div>
+
+            <div class="skill">
+                <a>
+                    <i class="fa-solid fa-check"></i>
+                </a>
+                CSS
+            </div>
+
+            <div class="skill">
+                <a>
+                    <i class="fa-solid fa-check"></i>
+                </a>
+                C++
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
+
+    <section class="apex-portfolio" id="projects">
+
+        <div class="apex-port">
+
+            <div class="port-text">
+
+                <span id="port-special">
+                    RECENT WORK
+                </span>
+
+                <h2>Case Studies</h2>
+
+            </div>
+
+        </div>
+
+        <div class="port-box">
+
+            <!-- PROJECT 1 -->
+
+            <div class="port-card">
+
+                <img loading="lazy"
+                    src="IM.jpg"
+                    alt="School website project"
+                >
+
+                <p id="text-special">
+                    A school needed a site where they can
+                    motivate their students. In collaboration
+                    with them we were able to make one genuine
+                    website for the learners.
+                </p>
+
+            </div>
+
+            <!-- PROJECT 2 -->
+
+            <div class="port-card">
+
+                <img loading="lazy"
+                    src="IMG2.jpg"
+                    alt="Mobile app development website"
+                >
+
+                <p>
+                    A company was craving for a website which
+                    could help them market their mobile app
+                    development strategies. In union with
+                    their ideas, we were able to hit the
+                    objective.
+                </p>
+
+            </div>
+
+            <!-- PROJECT 3 -->
+
+            <div class="port-card">
+
+                <img loading="lazy"
+                    src="IMG-1.jpg"
+                    alt="Coffee shop website"
+                >
+
+                <p>
+                    A local coffee shop owner who was a member
+                    of my church wanted his shop to be well
+                    known in the country. We met and created
+                    his website which is now internationally
+                    known.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+        <div class="con-box">
+
+            <div class="con-text">
+
+                <h2 id="foot">
+                    Let build something epic together
+                </h2>
+
+                <p id="message">
+                    I'm always ready to turn complex backend
+                    logic into seamless digital experiences
+                    with you. Have an exciting project in
+                    mind? Drop me a line and let's map out
+                    your next milestone together.
+                </p>
+
+                <br>
+
+                <p id="phoneline">
+                    <i class="fa-solid fa-phone"></i>
+                    +233 200 768320
+                </p>
+
+                <p id="emailline">
+                    <i class="fa-solid fa-envelope"></i>
+                    obedessuman00@gmail.com
+                </p>
+
+            </div>
+
+            <div class="info">
+
+                <form>
+
+                    <input
+                        type="text"
+                        required
+                        placeholder="Your Name"
+                    >
+
+                    <input
+                        type="email"
+                        required
+                        placeholder="Email address"
+                    >
+
+                    <textarea
+                        placeholder="Tell me about your project"
+                        required
+                    ></textarea>
+
+                    <button type="submit">
+                        Send Information
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <p id="foote">
+            &copy; 2026 All rights reserved.
+        </p>
+
+    </section>
+
+    <!-- =========================
+         PAYSTACK DONATION
+         The secret key stays on the server, never in this file.
+    ========================== -->
+        <script>
+      const payButton = document.getElementById("pay-button");
+      const emailInput = document.getElementById("support-email");
+      const amountInput = document.getElementById("support-amount");
+      const paymentMessage = document.getElementById("payment-message");
+
+      if (payButton && emailInput && amountInput && paymentMessage) {
+        payButton.addEventListener("click", async () => {
+          const email = emailInput.value.trim();
+          const amountText = amountInput.value.trim();
+          const amount = Number(amountText);
+
+          if (!emailInput.checkValidity()) {
+            emailInput.reportValidity();
+            return;
+          }
+          if (amountText === "" || !Number.isFinite(amount) || amount < 0.50 || amount > 10000 || Math.round(amount * 100) !== amount * 100) {
+            paymentMessage.textContent = "Enter an amount from GHS 0.50 to GHS 10,000.00, with up to 2 decimal places.";
+            amountInput.focus();
+            return;
+          }
+
+          payButton.disabled = true;
+          paymentMessage.textContent = "Connecting securely to Paystack…";
+          try {
+            const response = await fetch("/api/donate", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email, amount: amountText })
+            });
+            const data = await response.json().catch(() => ({}));
+            if (!response.ok || !data.success || !data.authorization_url) {
+              throw new Error(data.message || "Could not start payment. Please try again.");
+            }
+            window.location.assign(data.authorization_url);
+          } catch (error) {
+            paymentMessage.textContent = error.message || "Payment could not be started. Please try again.";
+            payButton.disabled = false;
+          }
+        });
+      }
+
+      // This contact form is not connected to an email service yet.
+      const contactForm = document.querySelector(".info form");
+      if (contactForm) {
+        contactForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          alert("This contact form is not connected yet. Please use the email address shown on the page.");
+        });
+      }
+    </script>
+
+</body>
+
+</html>
